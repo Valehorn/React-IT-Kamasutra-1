@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { styled } from 'styled-components';
-import logo from '/logo-name.svg';
+import logo from '/vite.svg';
 
 const HeaderContainer = styled.header`
     height: 50px;
@@ -22,7 +22,7 @@ function Header() {
     }, []);
 
     return <HeaderContainer>
-        <img src={logo} alt="Логотип" width={200} height={80} />
+        <img src={logo} alt="Логотип" width={200} height={40} />
         <span>Время: {now.toLocaleTimeString()}</span>
     </HeaderContainer>
 }
